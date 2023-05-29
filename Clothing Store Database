@@ -1,0 +1,18 @@
+--Create your own store database.
+
+CREATE TABLE Clothing_Store (id INTEGER PRIMARY KEY, Item TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO Clothing_Store Values
+(1, "T-Shirt", 10, 15),
+(2, "Pants", 10, 20),
+(3, "Dress", 20, 20),
+(4, "Romper", 20, 15),
+(5, "Shorts", 10, 15);
+
+
+
+--Display database ordered by price.
+SELECT * FROM Clothing_Store ORDER BY price;
+
+--Display at least 15 items 
+SELECT * SUM (quantity) FROM Clothing_Store;
